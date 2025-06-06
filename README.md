@@ -2,7 +2,7 @@
 
 ## Table of Contents
 ### Arrays and Hashing
-1. Contains Duplicate
-2. 
+1. Contains Duplicate 
+2. Two Sum 
 
 ## Concepts
