@@ -9,6 +9,9 @@
 ### 2. Two Pointers
 1. Valid Palindrome
 2. Two Sum II - Input Array Is Sorted
+3. Container With Most Water
+
+### 3. Stack
 
 ## Concepts
 
