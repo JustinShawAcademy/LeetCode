@@ -5,6 +5,7 @@
 1. Contains Duplicate (Hash Set)
 2. Two Sum (Hash Map)
 3. Valid Anagram (Hash Map)
+4. Group Anagrams
 
 ### 2. Two Pointers
 1. Valid Palindrome
