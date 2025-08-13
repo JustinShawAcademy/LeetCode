@@ -6,6 +6,7 @@
 2. Two Sum (Hash Map)
 3. Valid Anagram (Hash Map)
 4. Group Anagrams
+5. Top K Frequent Elements
 
 ### 2. Two Pointers
 1. Valid Palindrome
