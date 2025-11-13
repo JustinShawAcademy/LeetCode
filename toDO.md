@@ -1,3 +1,1 @@
-I need to organize the questions. 
-
-What is a good way?
+- [ ] Invite me friends to the repo
