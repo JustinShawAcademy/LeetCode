@@ -1,14 +1,26 @@
 ## []()
-*  Problem
+**Difficulty:** | **Topic:** 
 
-### Intuition
+### Approach 1: (Name Data Structure)
+#### Intuition
+#### Algorithm
+#### Complexity
+* **Time:** $O()$
+* **Space:** $O()$
 
-### Solution(s)
-#### (Data structure)
-```py
+#### Code
+```python
 ```
-##### Time & Space Complexity
-* Time complexity: $O()$
-* Space complexity: $O()$
 
+---
 
+### Approach 2: (Name Data Structure)
+#### Intuition
+#### Algorithm
+#### Complexity
+* **Time:** $O()$
+* **Space:** $O()$
+
+#### Code
+```python
+```
