@@ -29,4 +29,15 @@ Friday, Dec 13th - Dec 19th 2025
 ### Stack
 15. [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/)
 16. [Min Stack](https://leetcode.com/problems/min-stack/description/)
-17. [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) 
+17. [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/)
+
+## Week 4: Stack & Binary Search
+Friday, Dec 19th - Dec 26th 2025
+### Stack
+18. [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/)
+19. [Car Fleet](https://leetcode.com/problems/car-fleet/)
+20. [Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/)
+### Binary Search
+21. [Binary Search](https://leetcode.com/problems/binary-search/)
+22. [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/)
+23. [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/)
