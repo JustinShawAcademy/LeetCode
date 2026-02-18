@@ -24,12 +24,10 @@ class Solution(object):
         """
 
         dict = {}
-        for i, numbers in enumerate(nums): # iterate through index (i) and value (numbers) of array nums
-            complement = target - numbers #calculate for the complement
-            if complement in dict:
-                return [dict[complement],i]  #if complement is in dictionary, return the complement and its index
-            else:
-                dict[numbers] = i #otherwise set the dictionary to value
+        for i in range(len(nums)):
+            if (target - nums[i]) in dict:
+                return [i, dict[target - nums[i]]]
+            dict[nums[i]]=i
 
 #Use case 
 # Input: nums = [2,7,11,15], target = 9
