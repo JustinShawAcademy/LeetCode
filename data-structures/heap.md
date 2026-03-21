@@ -2,6 +2,35 @@
 
 ## Problems
 
+## Syntax
+Python’s `heapq` module provides a Min-Heap by default. To use a Max-Heap, we must negate the numbers.
+
+### Min-Heap (default)
+```py
+import heapq
+heap = [] # Use a standard list
+heapq.heappush(heap, 10) # O(log(n)) time
+heapq.heappush(heap, 5)  # O(log(n)) time
+
+smallest = heapq.heappop(heap) # Returns 5 | O(log(n)) time
+peek = heap[0] # Returns 10 (without removing) | O(1) time
+```
+
+### Max-Heap (Negation trick)
+```py
+max_heap = []
+heapq.heappush(max_heap, -10) # Push negative
+heapq.heappush(max_heap, -20)
+
+largest = -heapq.heappop(max_heap) # Pop and negate back (Returns 20)
+```
+
+### In-place Transformation:
+```py
+nums = [3, 1, 4]
+heapq.heapify(nums) # O(N) time
+```
+
 ## Heap Properties
 > heap is also known as *priority queue*.
 
