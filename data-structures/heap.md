@@ -1,6 +1,7 @@
 # Heap
 
 ## Problems
+[347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/)
 
 ## Syntax
 Python’s `heapq` module provides a Min-Heap by default. To use a Max-Heap, we must negate the numbers.
@@ -38,7 +39,7 @@ recall that queue's are first in, first out. However, if we wanted to queue base
 
 Priority queue is the interface but under the hood, it's using a **binary heap** (however, the name's are interchangable)
 
-![heap](./img/heap.png)
+![heap](./img/heap-imgs/heap.png)
 
 At first glance, a heap looks like a binary tree. That's because it is haha. However, it's not the Binary Search Tree that we all know. The BST's root node is samller than every value to the right and bigger than every value of the left. This is not the case for heaps.
 
@@ -47,7 +48,7 @@ In fact, we can see in a min heap, that the decendant in the tree.
 ### 1) Structure property 
 A binary heap is essentailly a Complete Binary Tree
 
-![complete-binary-tree](./img/complete-binary-tree.png)
+![complete-binary-tree](./img/heap-imgs/complete-binary-tree.png)
 
 #### Binary Tree Definition
 1. Full Levels: Every level of the tree must be completely filled with nodes, except possibly the very last level.
@@ -62,7 +63,7 @@ Binary heaps are drawn using a tree data structure but under the hood, they are 
 
 We will take an array of size `n+1` where `n` is the number of nodes in our binary heap. This will make sense soon. We will visit our nodes in the same order as we visit nodes in breadth-first search (level by level, from left to right). We will insert these into our array in a contiguous fashion. However, we will start filling them from index 1 instead of 0, for reasons we will discuss soon.
 
-![heap-array](./img/heap-array.png)
+![heap-array](./img/heap-imgs/heap-array.png)
 
 The reason why we start filling up our array from index `1` is because it helps us figure out the index at which a node's left child, right child, or the parent resides. Because binary heaps are complete binary trees, no space is required for pointers. Instead, a node's left child, right child and parent can be calculated using the following formulas, where $i$ is the index of a given node.
 
@@ -78,7 +79,7 @@ The number above a node (in blue) is the corresponding index in the array of eac
 
 We can also now appreciate why we start at index `1`. Suppose we wanted to find `14`'s left and right child and `14` was at `0` . Well, any number multiplied by a $0$ is $0$, and would tell us that the left child resides at the `0`th index, which is of course not the case.
 
-![heap-array-example](./img/heap-array-example.png)
+![heap-array-example](./img/heap-imgs/heap-array-example.png)
 
 ## Push and Pop
 ### Pushing into the heap
@@ -86,17 +87,17 @@ Now let's talk about pushing into the heap (inserting into the heap)
 
 Let's say that we're inserting into `17` into the heap:
 
-![pushing-heap](./img/pushing-heap.png)
+![pushing-heap](./img/heap-imgs/pushing-heap.png)
 
 Inserting `17` at where it is now, it passes the 1st properties, structure property. However, it violates the min heap order property since it's parent, `26` is strictly larger. Since `17` is at index 10, when we are coding, we'll know that the parent is at index 5 (`26`) because of the formula: `parent` = $i/2$.
 
 We can fix the order property by simply swap the index `10` and index `5` in our array (values `17` and `26`). Now we continue the algorithm by checking if it's parent is greater. In this case, it's parent is at index `2` which has the value of `19`. Since `19 > 17`, we swap again.
 
-![swap-heap](./img/swap-heap.png)
+![swap-heap](./img/heap-imgs/swap-heap.png)
 
 After the swap, we can see that the heap passes both properties (structual and order)
 
-![sucess-push](./img/sucess-push.png)
+![sucess-push](./img/heap-imgs/sucess-push.png)
 
 #### Push Code
 ```py
@@ -133,7 +134,7 @@ The correct solution is very clever.
 5. To do so, we will continuously swap `30` with `min(left_child, right_child)` until it reaches the correct position, i.e. both of its children are greater than or equal to `30`.
 6. We swap `30` with `16`, then `19` with `30`. The resulting tree will look like the following.
 
-![popping-heap](./img/popping-heap.png)
+![popping-heap](./img/heap-imgs/popping-heap.png)
 
 #### Pop Code
 ```py
